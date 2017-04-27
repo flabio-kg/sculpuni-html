@@ -166,8 +166,7 @@
 			}
 		}
 	}
-	&__menu{
-		line-height: 80px;
+	&__menu{		
 		clear: both;
 		ul{
 			display: block;
@@ -181,7 +180,6 @@
 				display: inline-block;
 				list-style-type: none;
 				padding-right: 18px;
-				padding-bottom: 7px;
 				@media (max-width: $screen-md-max){
 					padding-right: 9px;
 				}
@@ -198,7 +196,7 @@
 					background-color: #4C6E70;
 					position: absolute;
 					z-index: 999;
-					top: 87px;
+					top: 88px;
 					overflow: hidden;
 					display: none;
 					padding-top: 10px;
@@ -231,7 +229,7 @@
 					font-family: 'Raleway', sans-serif;
 					font-weight: 400;
 					text-decoration: none;
-					padding-bottom: 38px;
+					line-height: 88px;
 					@media (max-width: $screen-md-max){
 						font-size: 14px;
 					}
