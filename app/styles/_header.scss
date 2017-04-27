@@ -10,8 +10,6 @@
 		text-align: right;
 		@media (max-width: $screen-sm-max){
 			text-align: left;
-		}
-		@media (max-width: $screen-xs-min){
 			padding-top: 10px;
 		}
 		ul{
