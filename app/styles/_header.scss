@@ -11,6 +11,7 @@
 		@media (max-width: $screen-sm-max){
 			text-align: left;
 			padding-top: 10px;
+			padding-bottom: 10px;
 		}
 		ul{
 			padding-left: 0;
@@ -75,9 +76,6 @@
 		@media (max-width: $screen-sm-min) {
 			top: -50px;
 			bottom: 0;
-		}
-		@media (max-width: $screen-xs-min){
-			top: -60px;
 		}
 		i {
 			background-color: #fff;

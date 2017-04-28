@@ -1,6 +1,5 @@
 .create {
   padding-top: 25px;
-
   &__blog {
     padding: 10px 15px 90px;
     background-color: #fff;
@@ -12,16 +11,6 @@
     @media (max-width: $screen-sm-max) {
       padding-bottom: 20px;
     }
-
-    &:before {
-      content: '';
-      position: absolute;
-      border-top: 2px #E9E9E9 solid;
-      top: 38px;
-      right: 15px;
-      left: 15px;
-    }
-
     h3 {
       font-size: 30px;
       color: #000;
