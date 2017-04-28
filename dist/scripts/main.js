@@ -29,5 +29,55 @@ $(document).ready(function () {
 	API.bind('close:start', function ($panel) {
 		$('.js-navtrigger').toggleClass('-active');
 	});
+
+	if (Modernizr.mq('(max-width: 767px)')) {
+		var init = function init(data) {
+			$('#map').html('');
+			myMap = new ymaps.Map('map', {
+				controls: ['zoomControl', 'fullscreenControl', 'geolocationControl'],
+				center: [55.728778, 37.610988],
+				behaviors: ['drag'],
+				zoom: 17
+			});
+
+			if (!data.type) {
+				myPlacemark = new ymaps.Placemark([55.728778, 37.610988], {
+					balloonContentHeader: 'Союз скульпторов',
+					balloonContentBody: 'г. Москва, Ленинский проспект, дом 2'
+				});
+				myMap.geoObjects.add(myPlacemark);
+				return true;
+			};
+		};
+
+		var myMap, myPlacemark;
+
+		ymaps.ready(init);
+		;
+	} else {
+		var _init = function _init(data) {
+			$('#map').html('');
+			myMap = new ymaps.Map('map', {
+				controls: ['zoomControl', 'fullscreenControl', 'geolocationControl'],
+				center: [55.728779, 37.610987],
+				behaviors: ['drag'],
+				zoom: 17
+			});
+
+			if (!data.type) {
+				myPlacemark = new ymaps.Placemark([55.728779, 37.610987], {
+					balloonContentHeader: 'Союз скульпторов',
+					balloonContentBody: 'г. Москва, Ленинский проспект, дом 2'
+				});
+				myMap.geoObjects.add(myPlacemark);
+				return true;
+			};
+		};
+
+		var myMap, myPlacemark;
+
+		ymaps.ready(_init);
+		;
+	}
 });
 //# sourceMappingURL=main.js.map
