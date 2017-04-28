@@ -1,16 +1,10 @@
 $(document).ready(function() {
 
-	$('.img-holder').mousemove(function(e){
-        var amountMovedX = (e.pageX * -1 / 6);
-        var amountMovedY = (e.pageY * -1 / 6);
-        $(this).css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
-    });
-
 	$('.header__menu ul').clone().appendTo('.mmenu-nav');
 
 	var $menu = $('.mmenu-nav').mmenu({
 		navbar: {
-			title: '<img src=\'images/logo.png\' alt=\'\' />'
+			title: 'Меню'
 		},
 		extensions: [
 		'fx-menu-slide',
