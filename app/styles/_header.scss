@@ -20,14 +20,15 @@
 			li{
 				list-style-type: none;
 				display: inline-block;
+				margin-left: 20px;
 				@media (max-width: $screen-xs-max){
 					display: block;
+					margin: 0;
 				}				
 				a{
 					color: #fff;
 					font-size: 18px;
 					font-weight: 700;
-					padding-right: 20px;
 					line-height: 50px;
 					text-decoration: none;
 					@media (max-width: $screen-sm-max){
@@ -178,9 +179,9 @@
 			li{
 				display: inline-block;
 				list-style-type: none;
-				padding-right: 18px;
+				padding-right: 10px;
 				@media (max-width: $screen-md-max){
-					padding-right: 9px;
+					padding-right: 7px;
 				}
 				&:last-child{
 					padding-right: 0;
@@ -229,7 +230,7 @@
 					text-decoration: none;
 					line-height: 88px;
 					@media (max-width: $screen-md-max){
-						font-size: 14px;
+						font-size: 13px;
 					}
 					&:hover{
 						color: #53777a;
