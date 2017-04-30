@@ -1,6 +1,6 @@
 .content{
 	&__blog{
-		background-image: url('../images/bg_1.png');
+		background-image: url('../images/home.jpg');
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: cover;
@@ -31,48 +31,6 @@
 			padding-top: 45px;
 			@media (max-width: $screen-sm-min){
 				font-size: 22px;
-			}
-		}
-		.parallax{
-			li{
-				list-style-type: none;
-			}
-			.first{
-				img{
-					position: absolute;
-					left: 0;
-					bottom: 0;
-					@media (max-width: $screen-sm-max){
-						display: none;
-					}
-				}
-			}
-			.tvo{
-				img{
-					position: absolute;
-					left: 35%;
-					transform: transitionX(-50%);
-					width: 380px;
-					bottom: 0;
-					@media (max-width: $screen-sm-max){
-						left: 0;
-					}
-					@media (max-width: $screen-xs-min){
-						left: 0;
-						width: 250px;
-						bottom: 0;
-					}
-				}
-			}
-			.tree{
-				img{
-					position: absolute;
-					right: 0;
-					bottom: 0;
-					@media (max-width: $screen-sm-max){
-						display: none;
-					}
-				}
 			}
 		}
 	}
