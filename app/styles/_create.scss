@@ -1,6 +1,7 @@
-.create {
+.content {
   padding-top: 25px;
-  &__blog {
+
+  &__block {
     padding: 10px 15px 90px;
     background-color: #fff;
     box-shadow: 0 3px 7.67px 5.33px rgba(34, 34, 52, 0.22);
@@ -11,6 +12,7 @@
     @media (max-width: $screen-sm-max) {
       padding-bottom: 20px;
     }
+
     h3 {
       font-size: 30px;
       color: #000;
@@ -72,7 +74,6 @@
 
       img {
         max-width: 100%;
-        transform: scale(1);
         transition: all 1s ease-out;
         @media (max-width: $screen-sm-max) {
           float: none !important;
