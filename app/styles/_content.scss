@@ -68,11 +68,6 @@
 				transition: all 1s ease-out;
 			}
 		}
-		// &:hover{
-		// 	span{
-		// 		transform: scale(1.1);
-		// 	}
-		// }
 	}
 
 	&__link {
@@ -169,12 +164,15 @@
 		margin: 0 auto;
 		margin-top: 20px;
 		padding-top: 22px;
-
+	}
+	&__thumbnail{
+		width: 139px;
+		height: 139px;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
 		img {
-			display: block;
-			margin: 0 auto;
-			max-width: 139px;
-			width: 100%;
+			width: auto;
 		}
 	}
 
