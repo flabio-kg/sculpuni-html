@@ -28,7 +28,7 @@ body{
 		position: relative;
 		font-size: 16px;
 		font-weight: 400;
-		color: #000;		
+		color: #000;
 		&:before{
 			content: '/';
 			position: absolute;
@@ -37,6 +37,7 @@ body{
 		&:last-child{
 			padding-right: 0;
 			cursor: no-drop;
+			color: #ccc;
 			&:before{
 				content: '';
 			}

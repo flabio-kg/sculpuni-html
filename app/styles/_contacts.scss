@@ -1,11 +1,16 @@
-.contacts{
+.contact {
 	padding-top: 30px;
 	position: relative;
-	&__blog{
+
+	&__block {
 		background-color: #fff;
-		padding: 20px 15px;
-		box-shadow: 0px 3px 7.67px 5.33px rgba(34, 34, 52, 0.22);
-		h3{
+		top: 20px;
+		padding-right: 15px !important;
+		padding-bottom: 20px;
+		padding-left: 15px !important;
+		box-shadow: 0 3px 7.67px 5.33px rgba(34, 34, 52, 0.22);
+
+		h3 {
 			font-size: 30px;
 			color: #000;
 			font-family: 'Raleway', sans-serif;
@@ -14,7 +19,8 @@
 			margin: 0;
 			padding-top: 15px;
 			position: relative;
-			&:before{
+
+			&:before {
 				content: '';
 				position: absolute;
 				width: 80px;
@@ -24,7 +30,8 @@
 				left: 50%;
 				transform: translateX(-50%);
 			}
-			&:after{
+
+			&:after {
 				content: '';
 				position: absolute;
 				width: 60px;
@@ -36,90 +43,127 @@
 			}
 		}
 	}
-	&__item{
+
+	.contact {
 		padding-top: 50px;
-		p{
+
+		p {
 			font-size: 20px;
 			color: #000;
 			font-family: 'Roboto', sans-serif;
 			font-weight: 400;
 			text-decoration: none;
-			transition: all .3s;
+			transition: all 0.3s;
 			padding-top: 30px;
-			@media (max-width: $screen-md-max){
+			@media (max-width: $screen-md-max) {
 				text-align: center;
 			}
-			@media (max-width: $screen-xs-max){
+			@media (max-width: $screen-xs-max) {
 				font-size: 16px;
 				padding-top: 10px;
 			}
-			@media (max-width: $screen-xs-min){
+			@media (max-width: $screen-xs-min) {
 				font-size: 13px;
 			}
-			i{
+
+			i {
 				color: #7FB237;
 				padding-right: 15px;
-				@media (max-width: $screen-xs-max){
+				@media (max-width: $screen-xs-max) {
 					display: none;
 				}
 			}
 		}
 	}
-	&__items{
+
+	&__item {
 		position: relative;
-		@media (max-width: $screen-xs-min){
+		@media (max-width: $screen-xs-min) {
 			text-align: center;
 			margin-left: -15px;
 		}
-		ul{
+
+		ul {
 			padding-left: 40px;
-			@media (max-width: $screen-xs-max){
+			@media (max-width: $screen-xs-max) {
 				padding: 0;
 				text-align: center;
 			}
-			@media (max-width: $screen-xs-min){
+			@media (max-width: $screen-xs-min) {
 				text-align: center;
 				display: inline-block;
 				padding-left: 0;
 				margin-left: -15px;
 				margin-right: -15px;
 			}
-			li{
+
+			li {
 				list-style-type: none;
 				display: block;
-				a{
+
+				a {
 					font-size: 20px;
 					color: #000;
 					font-family: 'Roboto', sans-serif;
 					font-weight: 400;
 					text-decoration: none;
-					transition: all .3s;
-					@media (max-width: $screen-xs-max){
+					transition: all 0.3s;
+					@media (max-width: $screen-xs-max) {
 						font-size: 16px;
 					}
-					@media (max-width: $screen-xs-min){
+					@media (max-width: $screen-xs-min) {
 						font-size: 13px;
 					}
-					&:hover{
+
+					&:hover {
 						color: #7FB237;
 					}
 				}
 			}
-			i{
+
+			i {
 				font-size: 30px;
 				color: #7FB237;
 				position: absolute;
 				left: 0;
 				top: 15px;
-				@media (max-width: $screen-xs-max){
+				@media (max-width: $screen-xs-max) {
+					display: none;
+				}
+			}
+		}
+
+		p {
+			font-size: 20px;
+			color: #000;
+			margin-left: 40px;
+			margin-top: 50px;
+			@media (max-width: $screen-xs-max) {
+				margin-top: 10px;
+			}
+
+			.fa-map-marker {
+				font-size: 30px;
+				color: #7FB237;
+				position: absolute;
+				left: 0;
+				top: -5px;
+				@media (max-width: $screen-xs-max) {
 					display: none;
 				}
 			}
 		}
 	}
-	&__form{
-		.-forms{
-			input,textarea{
+
+	&__form {
+		padding-top: 30px;
+		@media (max-width: $screen-xs-max) {
+			padding-left: 15px;
+		}
+
+		.-forms {
+			input,
+			textarea {
 				outline: none;
 				color: #d4d4d4;
 				font-size: 16px;
@@ -127,35 +171,40 @@
 				padding-left: 12px;
 				font-weight: 400;
 				border: 1px #d4d4d4 solid;
-				transition: all .9s;
+				transition: all 0.9s;
+
 				&:focus {
-					box-shadow: 0px 0px 15px #7FB23D;
-					transition: all .9s;
+					box-shadow: 0 0 15px #7FB23D;
+					transition: all 0.9s;
 				}
 			}
-			input{
+
+			input {
 				max-width: 220px;
 				width: 100%;
 				height: 40px;
-				&:first-child{
-					@media (max-width: $screen-md-max){
+
+				&:first-child {
+					@media (max-width: $screen-md-max) {
 						margin-right: 0;
 						margin-top: 0;
 					}
 				}
-				@media (max-width: $screen-md-max){
+				@media (max-width: $screen-md-max) {
 					max-width: 100%;
 					width: 100%;
 					margin-top: 25px;
 				}
 			}
-			textarea{
+
+			textarea {
 				margin-top: 25px;
 				max-width: 100%;
 				width: 100%;
 				min-height: 115px;
 			}
-			.-btn{
+
+			.-btn {
 				float: right;
 				margin-top: 20px;
 				color: #fff;
@@ -168,14 +217,14 @@
 				font-family: 'Raleway', sans-serif;
 				font-weight: 400;
 				border: 2px transparent solid;
-				transition: all .3s;
-				@media (max-width: $screen-sm-max){
+				transition: all 0.3s;
+				@media (max-width: $screen-sm-max) {
 					float: none;
 					display: block;
-					margin: 0 auto;
-					margin-top: 25px;
+					margin: 25px auto 0;
 				}
-				&:hover{
+
+				&:hover {
 					border: 2px #7FB237 solid;
 					background-color: transparent;
 					color: #7FB237;
@@ -183,17 +232,19 @@
 			}
 		}
 	}
-	&__map{
+
+	&__map {
 		position: relative;
 		width: 100%;
 		min-height: 450px;
 		margin-top: 40px;
-		#map{
+		
+		#map {
 			position: absolute;
-			top: 0px;
-			right: 0px;
-			left: 0px;
-			bottom: 0px;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
 		}
 	}
 }
