@@ -1,5 +1,5 @@
-.content{
-	&__blog{
+.content {
+	&__blog {
 		background-image: url('../images/home.jpg');
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -7,10 +7,11 @@
 		min-height: 433px;
 		text-align: center;
 		background-color: rgb(137, 137, 137);
-		box-shadow: 0px 3px 7.67px 5.33px rgba(34, 34, 52, 0.22);
+		box-shadow: 0 3px 7.67px 5.33px rgba(34, 34, 52, 0.22);
 		position: relative;
 		overflow: hidden;
-		&:before{
+
+		&:before {
 			content: '';
 			position: absolute;
 			background-color: rgb(0, 0, 0);
@@ -19,8 +20,9 @@
 			right: 0;
 			top: 0;
 			bottom: 0;
-		}		
-		h4{
+		}
+
+		h4 {
 			font-size: 36px;
 			color: #fff;
 			font-family: 'Raleway', sans-serif;
@@ -29,28 +31,32 @@
 			position: relative;
 			z-index: 1;
 			padding-top: 45px;
-			@media (max-width: $screen-sm-min){
+			@media (max-width: $screen-sm-min) {
 				font-size: 22px;
 			}
 		}
 	}
-	&__more{
+
+	&__more {
 		padding-top: 23px;
 	}
-	&__item{
+
+	&__item {
 		background-color: rgb(255, 255, 255);
-		box-shadow: 0px 3px 7.67px 5.33px rgba(34, 34, 52, 0.22);
+		box-shadow: 0 3px 7.67px 5.33px rgba(34, 34, 52, 0.22);
 		max-width: 100%;
 		width: 100%;
 		min-height: 560px;
 		margin-bottom: 37px;
-		a{
+
+		a {
 			overflow: hidden;
 			position: relative;
 			display: block;
 			width: 100%;
-			height: 272px;      
-			span{
+			height: 272px;
+
+			span {
 				background-position: center center;
 				background-size: cover;
 				background-repeat: no-repeat;
@@ -68,9 +74,11 @@
 		// 	}
 		// }
 	}
-	&__link{
+
+	&__link {
 		padding: 25px;
-		h4{
+
+		h4 {
 			text-align: center;
 			font-size: 22px;
 			color: #000;
@@ -78,7 +86,8 @@
 			font-weight: 400;
 			margin: 0;
 			position: relative;
-			&:before{
+
+			&:before {
 				content: '';
 				position: absolute;
 				width: 80px;
@@ -88,7 +97,8 @@
 				left: 50%;
 				transform: translateX(-50%);
 			}
-			&:after{
+
+			&:after {
 				content: '';
 				position: absolute;
 				width: 60px;
@@ -98,11 +108,12 @@
 				left: 50%;
 				transform: translateX(-50%);
 			}
-			@media (max-width: $screen-xs-min){
+			@media (max-width: $screen-xs-min) {
 				font-size: 16px;
 			}
 		}
-		p{
+
+		p {
 			font-size: 16px;
 			color: #000;
 			font-family: 'Raleway', sans-serif;
@@ -111,11 +122,12 @@
 			padding-top: 35px;
 			height: 145px;
 			overflow: hidden;
-			@media (max-width: $screen-xs-min){
+			@media (max-width: $screen-xs-min) {
 				font-size: 13px;
 			}
 		}
-		a{
+
+		a {
 			font-size: 16px;
 			color: #446365;
 			font-family: 'Raleway', sans-serif;
@@ -128,44 +140,48 @@
 			border: 1px #446365 solid;
 			margin-top: 25px;
 			float: right;
-			&:hover{
+
+			&:hover {
 				background-color: #446365;
 				color: #fff;
-				transition: all .3s;
+				transition: all 0.3s;
 			}
 		}
 	}
-	&__block{
+
+	&__block {
 		background-color: rgb(255, 255, 255);
-		box-shadow: 0px 3px 7.67px 5.33px rgba(34, 34, 52, 0.22);
+		box-shadow: 0 3px 7.67px 5.33px rgba(34, 34, 52, 0.22);
 		min-height: 520px;
-		padding-top: 37px;
 		margin-bottom: 40px;
-		@media (max-width: $screen-md-max){
+		@media (max-width: $screen-md-max) {
 			padding-right: 15px;
 			padding-left: 15px;
 		}
 	}
-	&__items{
+
+	&__items {
 		max-width: 319px;
 		width: 100%;
 		height: 451px;
 		border: 2px #4C6E70 solid;
 		display: block;
 		margin: 0 auto;
+		margin-top: 20px;
 		padding-top: 22px;
-		margin-bottom: 30px;
-		img{
+
+		img {
 			display: block;
 			margin: 0 auto;
 			max-width: 139px;
 			width: 100%;
 		}
 	}
-	&__links{
-		padding: 25px;
-		padding-bottom: 0;
-		h4{
+
+	&__links {
+		padding: 25px 25px 0;
+
+		h4 {
 			text-align: center;
 			font-size: 22px;
 			color: #000;
@@ -174,7 +190,8 @@
 			margin: 0;
 			position: relative;
 			height: 48px;
-			&:before{
+
+			&:before {
 				content: '';
 				position: absolute;
 				width: 80px;
@@ -184,7 +201,8 @@
 				left: 50%;
 				transform: translateX(-50%);
 			}
-			&:after{
+
+			&:after {
 				content: '';
 				position: absolute;
 				width: 60px;
@@ -194,11 +212,12 @@
 				left: 50%;
 				transform: translateX(-50%);
 			}
-			@media (max-width: $screen-xs-min){
+			@media (max-width: $screen-xs-min) {
 				font-size: 16px;
 			}
 		}
-		p{
+
+		p {
 			font-size: 16px;
 			color: #000;
 			font-family: 'Raleway', sans-serif;
@@ -207,11 +226,12 @@
 			padding-top: 35px;
 			height: 145px;
 			overflow: hidden;
-			@media (max-width: $screen-xs-min){
+			@media (max-width: $screen-xs-min) {
 				font-size: 14px;
 			}
 		}
-		a{
+
+		a {
 			font-size: 16px;
 			color: #446365;
 			font-family: 'Raleway', sans-serif;
@@ -224,10 +244,11 @@
 			border: 1px #446365 solid;
 			margin-top: 0;
 			float: right;
-			&:hover{
+
+			&:hover {
 				background-color: #446365;
 				color: #fff;
-				transition: all .3s;
+				transition: all 0.3s;
 			}
 		}
 	}

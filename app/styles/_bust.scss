@@ -1,7 +1,10 @@
 .content {
   padding-top: 25px;
   &__block{
-    padding: 10px 15px 10px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 25px;
     background-color: #fff;
     box-shadow: 0 3px 7.67px 5.33px rgba(34, 34, 52, 0.22);
     min-height: 500px;
@@ -61,6 +64,9 @@
 
       p {
         margin-bottom: 25px;
+        &:last-child{
+          margin-bottom: 0;
+        }
         @media (max-width: $screen-xs-max){
         padding-left: 0;
         text-align: center;
