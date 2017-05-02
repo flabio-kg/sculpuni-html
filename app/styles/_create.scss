@@ -23,6 +23,9 @@
       padding-top: 20px;
       text-align: center;
       position: relative;
+      @media (max-width: $screen-xs-max) {
+        font-size: 20px !important;
+      }
 
       &:before {
         content: '';
@@ -96,6 +99,7 @@
           padding-left: 0;
           text-align: center;
           margin-top: 20px;
+          font-size: 22px;
         }
       }
 

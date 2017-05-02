@@ -161,16 +161,18 @@
 		height: 451px;
 		border: 2px #4C6E70 solid;
 		display: block;
-		margin: 0 auto;
-		margin-top: 20px;
+		margin: 20px auto 0;
 		padding-top: 22px;
+
 	}
-	&__thumbnail{
+
+	&__thumbnail {
 		width: 139px;
 		height: 139px;
 		display: block;
 		margin: 0 auto;
 		text-align: center;
+
 		img {
 			width: auto;
 		}
@@ -221,11 +223,15 @@
 			font-family: 'Raleway', sans-serif;
 			font-weight: 400;
 			margin: 0;
-			padding-top: 35px;
+			padding-top: 25px;
 			height: 145px;
 			overflow: hidden;
 			@media (max-width: $screen-xs-min) {
-				font-size: 14px;
+				font-size: 13.5px;
+				height: 180px;
+			}
+			@media (max-width: $screen-xs-max) {
+				height: 150px;
 			}
 		}
 
