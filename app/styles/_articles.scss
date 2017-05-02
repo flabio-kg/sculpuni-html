@@ -1,14 +1,13 @@
 .articles{
 	padding-top: 25px;
+
 	&__blog{
 		padding: 10px 15px;
 		background-color: #fff;
 		box-shadow: 0px 3px 7.67px 5.33px rgba(34, 34, 52, 0.22);
 		min-height: 500px;
 		position: relative;
-		img{
-			width: 100%;
-		}
+
 
 	}
 	&__sidebar{
