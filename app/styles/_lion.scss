@@ -1,37 +1,15 @@
-.lion{
+.lion {
 	padding-bottom: 10px;
-	a{
-		overflow: hidden;
-		position: relative;
-		display: block;
+
+	img {
+		max-width: 100%;
 		width: 100%;
-		height: 388px;
-		@media (max-width: $screen-xs-max){
-			height: 250px;
-		}
-		span{
-			background-position: center top;
-			background-size: cover;
-			background-repeat: no-repeat;
-			position: absolute;
-			height: 388px;
-			left: 0;
-			right: 0;
-			transform: scale(1);
-			transition: all 1s ease-out;
-			@media (max-width: $screen-xs-max){
-				height: 250px;
-			}
-		}
-		&:hover{
-			span{
-				// transform: scale(1.1);
-			}
-		}
 	}
-	&__blog{
+
+	&__blog {
 		padding-top: 15px;
-		h3{
+
+		h3 {
 			color: #000;
 			font-size: 25px;
 			font-family: 'Raleway', sans-serif;
@@ -41,15 +19,18 @@
 			padding-bottom: 15px;
 		}
 	}
-	&__item{
+
+	&__item {
 		padding-top: 30px;
-		a{
+
+		a {
 			overflow: hidden;
 			position: relative;
 			display: block;
 			width: 100%;
 			height: 145px;
-			span{
+
+			span {
 				background-position: center top;
 				background-size: cover;
 				background-repeat: no-repeat;
@@ -60,32 +41,36 @@
 				transform: scale(1);
 				transition: all 1s ease-out;
 			}
-			&:hover{
-				span{
+
+			&:hover {
+				span {
 					// transform: scale(1.1);
 				}
 			}
 		}
 	}
-	&__block{
+
+	&__block {
 		padding-bottom: 30px;
-		@media (max-width: $screen-sm-min){
+		@media (max-width: $screen-sm-min) {
 			padding-bottom: 20px;
 		}
-		p{
+
+		p {
 			padding-top: 25px;
-			@media (max-width: $screen-sm-min){
+			@media (max-width: $screen-sm-min) {
 				padding-top: 15px;
 			}
 		}
-		h3{
+
+		h3 {
 			font-size: 18px;
 			color: #000;
 			font-family: 'Raleway', sans-serif;
 			font-weight: 400;
 			margin: 0;
 			padding-top: 27px;
-			@media (max-width: $screen-sm-min){
+			@media (max-width: $screen-sm-min) {
 				padding-top: 17px;
 			}
 		}
