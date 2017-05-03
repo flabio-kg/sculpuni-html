@@ -36,12 +36,14 @@
 		@media (max-width: $screen-sm-max) {
 			line-height: 80px;
 		}
+		@media (max-width: $screen-sm-max) {
+			line-height: 60px;
+		}
 
 		ul {
 			display: block;
 			padding: 0;
 			margin: 0;
-
 			li {
 				display: inline-block;
 				list-style-type: none;
@@ -73,8 +75,13 @@
 	&__contacts {
 		text-align: right;
 		padding-top: 9px;
-
+		@media (max-width: $screen-sm-max) {
+			text-align: center;
+		}
 		ul {
+			@media (max-width: $screen-sm-max) {
+				padding: 0;
+			}
 			li {
 				list-style-type: none;
 				position: relative;
@@ -195,6 +202,10 @@
 		background-color: #272727;
 		padding-top: 8px;
 		padding-top: 8px;
+		@media (max-width: $screen-sm-max) {
+			padding-bottom: 10px;
+		}
+
 		p {
 			padding-top: 5px;
 			text-align: left;
@@ -203,6 +214,10 @@
 			color: #d8d8d8;
 			font-family: 'Raleway', sans-serif;
 			font-weight: 400;
+			@media (max-width: $screen-sm-max) {
+				text-align: center;
+				padding-bottom: 10px;
+			}
 
 			span {
 				font-weight: 400;
