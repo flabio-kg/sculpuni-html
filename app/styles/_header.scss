@@ -1,4 +1,8 @@
 .header{
+
+	img{
+		max-width: 100%;
+	}
 	position: relative;
 	&__top{
 		min-height: 50px;
@@ -24,7 +28,7 @@
 				@media (max-width: $screen-xs-max){
 					display: block;
 					margin: 0;
-				}				
+				}
 				a{
 					color: #fff;
 					font-size: 18px;
@@ -50,9 +54,9 @@
 							display: none;
 						}
 					}
-				}				
+				}
 			}
-		}		
+		}
 	}
 	&__burger{
 		position: relative;
@@ -125,6 +129,8 @@
 	}
 	&__logo{
 		line-height: 83px;
+		padding-top: 5px;
+		padding-bottom: 5px;
 		@media (max-width: $screen-xs-max){
 			text-align: center;
 			line-height: 50px;
@@ -166,7 +172,7 @@
 			}
 		}
 	}
-	&__menu{		
+	&__menu{
 		clear: both;
 		ul{
 			display: block;
@@ -188,7 +194,7 @@
 				}
 				&:hover{
 					ul{
-						display: block;						
+						display: block;
 					}
 				}
 				ul{
